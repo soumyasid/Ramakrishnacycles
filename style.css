@@ -955,4 +955,84 @@ indexmap
     display: block;
 }
 
+/* service */
+/* Header container */
+.site-header {
+    background: #fff;
+    padding: 10px 20px;
+}
+
+/* Nav layout */
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo + text */
+.logo-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;      /* SMALL text */
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Logo image */
+.logo {
+    width: 30px;          /* SMALL logo */
+    height: auto;
+}
+
+/* Logo text */
+.logo-text {
+    white-space: nowrap;
+}
+
+/* Highlight */
+.hero-yellow {
+    color: #f4c430;
+    font-weight: 700;
+}
+
+/* Menu */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-links li a.active,
+.nav-links li a:hover {
+    color: #f4c430;
+}
+
+/* Kill default h1 size */
+.site-header h1 {
+    font-size: inherit;
+    margin: 0;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+}
+
 
