@@ -956,6 +956,37 @@ indexmap
 }
 
 
+/* service */
+/* Header logo + text (small, side style) */
+.logo-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;        /* SMALL text */
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* Logo size (important) */
+.logo {
+    width: 32px;            /* SMALL logo */
+    height: auto;
+}
+
+/* Highlight text */
+.hero-yellow {
+    color: #f4c430;
+    font-weight: 700;
+}
+
+/* Prevent h1 default huge spacing */
+header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+
 
 
 
