@@ -955,3 +955,54 @@ indexmap
     display: block;
 }
 
+/* service-contact logo */
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 40px;
+    height: auto;
+}
+
+.hero-yellow {
+    color: #f4c430;
+    font-weight: bold;
+}
+
+/* Logo + heading container */
+.logo-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;              /* space between logo & text */
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Logo image */
+.logo {
+    width: 40px;            /* adjust size if needed */
+    height: auto;
+}
+
+/* Highlight color for Hero Cycles text */
+.hero-yellow {
+    color: #f4c430;         /* Hero Cycles yellow */
+    font-weight: 700;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    .logo-title {
+        font-size: 20px;
+    }
+
+    .logo {
+        width: 30px;
+    }
+}
+
