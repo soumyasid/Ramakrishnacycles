@@ -1,0 +1,84 @@
+/* ===== BANNER (MEDIUM SIZE – PERFECT BALANCE) ===== */
+
+.banner {
+    background: linear-gradient(to right, #0d47a1, #1976d2);
+    padding: 50px 20px;          /* ⭐ medium height */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.banner-text {
+    max-width: 620px;
+}
+
+.banner-text h2 {
+    font-size: 32px;             /* ⭐ medium heading */
+    margin-bottom: 8px;
+}
+
+.banner-text p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.banner-logo {
+    width: 220px;                /* ⭐ medium logo */
+    height: auto;
+}
+
+/* 📱 Mobile responsive */
+@media (max-width: 768px) {
+    .banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 35px 15px;
+    }
+
+    .banner-text h2 {
+        font-size: 26px;
+    }
+
+    .banner-logo {
+        width: 200px;
+        margin-top: 15px;
+    }
+}
+/* Container for the store image */
+.store-image {
+    position: relative;
+    max-width: 100%;
+    margin: 30px 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.store-image img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Subheading overlay */
+.store-image .overlay-subhead {
+    position: absolute;              /* position on top of image */
+    bottom: 10px;                    /* distance from bottom of image */
+    left: 50%;                       /* center horizontally */
+    transform: translateX(-50%);
+    color: #fff;                      /* white text */
+    background: rgba(0, 0, 0, 0.4);   /* semi-transparent black background */
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 16px;                 /* smaller, like subheading */
+    font-weight: normal;
+    text-align: center;
+}
+
+/* Optional: responsive for smaller screens */
+@media (max-width: 768px) {
+    .store-image .overlay-subhead {
+        font-size: 14px;
+        padding: 4px 10px;
+    }
+}

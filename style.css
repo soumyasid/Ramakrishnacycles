@@ -1,0 +1,957 @@
+/* =====================
+   GLOBAL RESET
+===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* =====================
+   HEADER & NAVBAR
+===================== */
+header {
+    background: #0d47a1;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+nav h1 {
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b;
+}
+
+/* =====================
+   HERO / BANNER
+===================== */
+.banner {
+    background: linear-gradient(to right, #0d47a1, #1976d2);
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.banner h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 18px;
+    opacity: 0.95;
+}
+
+/* =====================
+   SECTIONS
+===================== */
+.section {
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto;
+}
+
+.section h2 {
+    font-size: 28px;
+    color: #0d47a1;
+    margin-bottom: 15px;
+}
+
+.section p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* =====================
+   CARDS (SERVICES)
+===================== */
+.cards {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card h3 {
+    color: #0d47a1;
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+/* =====================
+   CONTACT FORM
+===================== */
+form {
+    max-width: 500px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+form textarea {
+    resize: none;
+}
+
+form button {
+    background: #0d47a1;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #08306b;
+}
+
+/* =====================
+   FOOTER
+===================== */
+footer {
+    background: #222;
+    color: #bbb;
+    text-align: center;
+    padding: 18px 10px;
+    margin-top: 60px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* =====================
+   RESPONSIVE (MOBILE)
+===================== */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 8px 12px;
+    }
+
+    .banner h2 {
+        font-size: 30px;
+    }
+
+    .section h2 {
+        font-size: 24px;
+    }
+}
+.card {
+    text-align: center;
+}
+
+.card:hover .service-icon {
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+.card a {
+    color: #0d47a1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+iframe {
+    margin-top: 15px;
+}
+.logo .tagline {
+    color: #e3f2fd;
+    font-size: 14px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #ffeb3b;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #fdd835;
+}
+.service-icon {
+    font-size: 40px;
+    color: #0d47a1;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+.logo h1 {
+    margin-bottom: 2px;
+}
+.logo {
+    line-height: 1.2;
+}
+.banner .btn {
+    margin-left: auto;
+    margin-right: auto;
+}
+.banner-img {
+    max-width: 240px;
+    margin: 20px auto;
+    display: block;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;          /* FIXED HEIGHT */
+    object-fit: cover;     /* Horizontal look */
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #0d47a1;
+    margin-bottom: 8px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+}
+
+.logo-text h1 {
+    font-size: 24px;
+    color: #fff;
+}
+
+.logo-text .tagline {
+    font-size: 14px;
+    color: #e3f2fd;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+}
+
+.logo-text h1 {
+    font-size: 24px;
+    color: #fff;
+}
+
+.logo-text .tagline {
+    font-size: 14px;
+    color: #e3f2fd;
+}
+.logo h1 {
+    font-size: 28px;
+    color: #ffeb3b;
+    letter-spacing: 1px;
+}
+/* ==================== Testimonials Section ==================== */
+.testimonials {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f5f5f5;
+}
+.testimonials h2 {
+    color: #0d47a1;
+    margin-bottom: 40px;
+}
+.testimonial-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.testimonial-card {
+    background: #fff;
+    padding: 25px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 300px;
+    transition: transform 0.3s;
+}
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+.testimonial-card p {
+    font-style: italic;
+    margin-bottom: 15px;
+}
+.testimonial-card h4 {
+    color: #333;
+    font-weight: bold;
+}
+
+/* ==================== Contact / Location Map ==================== */
+.contact-info {
+    text-align: center;
+    padding: 60px 20px;
+}
+.contact-info h2 {
+    color: #0d47a1;
+    margin-bottom: 25px;
+}
+.contact-info p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+.contact-info a {
+    color: #0d47a1;
+    text-decoration: none;
+    font-weight: bold;
+}
+.contact-info a:hover {
+    text-decoration: underline;
+}
+.contact-info iframe {
+    width: 90%;
+    max-width: 1000px;
+    height: 300px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: none;
+}
+
+/* ==================== Newsletter / Updates ==================== */
+.newsletter {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f5f5f5;
+}
+.newsletter h2 {
+    color: #0d47a1;
+    margin-bottom: 25px;
+}
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.newsletter input[type="email"] {
+    padding: 12px 15px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    width: 250px;
+    outline: none;
+    font-size: 16px;
+}
+.newsletter button {
+    padding: 12px 25px;
+    border-radius: 25px;
+    border: none;
+    background: #ffcc00;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.newsletter button:hover {
+    background: #e6b800;
+}
+/* ==================== FAQ Section ==================== */
+.faq {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f5f5f5; /* light gray background */
+}
+.faq h2 {
+    color: #0d47a1; /* dark blue heading */
+    margin-bottom: 40px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* FAQ Items */
+.faq-item {
+    max-width: 700px;
+    margin: 15px auto;
+    text-align: left;
+}
+.faq-question {
+    width: 100%;
+    background: #0d47a1; /* dark blue button */
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: left;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+.faq-question:hover {
+    background: #1976d2; /* lighter blue on hover */
+    transform: translateY(-2px);
+}
+
+/* Answer hidden by default */
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background: #fff; /* white answer card */
+    padding: 0 20px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Answer content */
+.faq-answer p {
+    margin: 15px 0;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Show answer when active */
+.faq-item.active .faq-answer {
+    max-height: 200px; /* adjust to fit your content */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .faq h2 {
+        font-size: 26px;
+    }
+    .faq-question {
+        font-size: 15px;
+        padding: 12px 15px;
+    }
+    .faq-answer p {
+        font-size: 14px;
+    }
+}
+
+/* ==================== General Page Styles ==================== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+/* ==================== Header / Navigation ==================== */
+header {
+    background: #0d47a1;
+    color: #fff;
+    padding: 15px 20px;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header .logo img {
+    width: 80px;
+    border-radius: 8px;
+}
+header .logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+header .logo p.tagline {
+    font-size: 14px;
+    margin: 0;
+}
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+header ul li a.active {
+    text-decoration: underline;
+}
+
+/* ==================== Hero Banner ==================== */
+.about-banner {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to right, #0d47a1, #1976d2);
+    color: #fff;
+    border-radius: 10px;
+    margin: 30px 20px;
+}
+.about-banner h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.about-banner img.banner-logo {
+    width: 250px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* ==================== About Sections ==================== */
+.about-section {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: left;
+}
+.about-section h2 {
+    color: #0d47a1;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+.about-section p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+.about-section ul {
+    list-style: disc;
+    margin-left: 25px;
+    color: #333;
+    font-size: 16px;
+}
+.about-section ul li {
+    margin-bottom: 8px;
+}
+
+/* ==================== Button ==================== */
+.btn {
+    display: inline-block;
+    background: #ffcc00;
+    color: #000;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+.btn:hover {
+    background: #e6b800;
+}
+
+/* ==================== Footer ==================== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0d47a1;
+    color: #fff;
+    margin-top: 40px;
+}
+
+/* ==================== Responsive ==================== */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .about-banner h2 {
+        font-size: 26px;
+    }
+    .about-section h2 {
+        font-size: 22px;
+    }
+    .about-section p, .about-section ul {
+        font-size: 15px;
+    }
+    .about-banner img.banner-logo {
+        width: 200px;
+    }
+}
+
+.faq {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f5f5f5;
+}
+.faq h2 {
+    color: #0d47a1;
+    margin-bottom: 40px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.faq-item {
+    max-width: 700px;
+    margin: 15px auto;
+    text-align: left;
+}
+
+.faq-question {
+    width: 100%;
+    background: #0d47a1;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    transition: background 0.3s;
+}
+
+.faq-question:hover {
+    background: #1976d2;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background: #fff;
+    padding: 0 20px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.faq-answer p {
+    margin: 15px 0;
+    color: #333;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px; /* adjust if longer answer */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .faq h2 {
+        font-size: 26px;
+    }
+    .faq-question {
+        font-size: 15px;
+        padding: 12px 15px;
+    }
+    .faq-answer p {
+        font-size: 14px;
+    }
+}
+
+/* Container for image */
+.section {
+    position: relative;          /* required for overlay */
+    max-width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Make image full width and rounded */
+.section img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Overlay subheading text */
+.section .overlay-subhead {
+    position: absolute;           /* overlay on image */
+    bottom: 10px;                 /* 10px from bottom */
+    left: 50%;                    /* horizontally center */
+    transform: translateX(-50%);
+    color: #fff;                  /* white text */
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 16px;              /* subheading size */
+    font-weight: 500;
+    text-align: center;
+    pointer-events: none;         /* so clicking on text doesn’t block anything */
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .section .overlay-subhead {
+        font-size: 14px;
+        padding: 4px 10px;
+    }
+}
+
+service 
+/* Hero Cycles Color Classes */
+.hero-yellow {
+    color: #FFD700;  /* yellow */
+    font-weight: bold;
+}
+
+.hero-orange {
+    color: #FF8C00;  /* orange */
+    font-weight: bold;
+}
+
+.hero-blue {
+    color: #1E90FF;  /* blue */
+    font-weight: bold;
+}
+
+.hero-shadow {
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+
+nav h1 .hero-yellow {
+    color: #FFD700 !important;
+    font-weight: bold;
+}
+
+contact
+.hero-yellow {
+    color: #FFD700;  /* bright yellow */
+    font-weight: bold;
+}
+
+indexmap
+.section a img {
+    transition: transform 0.3s ease;
+}
+
+.section a img:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.contact-info {
+    background-color: #1E90FF; /* Dodger Blue background */
+    color: #ffffff;            /* White text */
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;          /* Optional: limit width */
+    margin: 20px auto;         /* Center the section */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.contact-info a {
+    color: #FFD700; /* Phone link in yellow */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+.contact-info {
+    background-color: #1E90FF; /* Dodger Blue background */
+    color: #ffffff;            /* White text */
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;          /* Optional: limit width */
+    margin: 20px auto;         /* Center the section */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.contact-info a {
+    color: #FFD700; /* Phone link in yellow */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+.contact-info {
+    background-color: #1E90FF; /* Dodger Blue background */
+    color: #ffffff;            /* White text */
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;          /* Optional: limit width */
+    margin: 20px auto;         /* Center the section */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.contact-info a {
+    color: #FFD700; /* Phone link in yellow */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+.contact-info {
+    background-color: #1E90FF; /* Dodger Blue background */
+    color: #ffffff;            /* White text */
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;          /* Optional: limit width */
+    margin: 20px auto;         /* Center the section */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.contact-info a {
+    color: #FFD700; /* Phone link in yellow */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+.contact-info {
+    background-color: #1E90FF; /* Dodger Blue background */
+    color: #ffffff;            /* White text */
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;          /* Optional: limit width */
+    margin: 20px auto;         /* Center the section */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.contact-info a {
+    color: #FFD700; /* Phone link in yellow */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+
+/* Button style */
+.btn {
+    display: inline-block;       /* Makes the <a> behave like a button */
+    padding: 12px 24px;          /* Medium size */
+    background-color: #1976d2;   /* Blue background */
+    color: white;                /* White text */
+    text-decoration: none;       /* Remove underline */
+    border-radius: 8px;          /* Rounded corners */
+    font-weight: bold;           /* Bold text */
+    font-size: 16px;             /* Medium font size */
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+.btn:hover {
+    background-color: #0d47a1;  /* Darker blue on hover */
+}
+
+/* Banner Section */
+
+/* Reset default margins/padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Banner Section */
+#banner {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Full-width image */
+#banner img.full-banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
