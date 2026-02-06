@@ -26,21 +26,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="home-page">
+<header class="site-header">
+    <nav class="nav-bar">
 
-<header>
-    <nav>
-        <div class="logo">
-            <img src="rknl.jpg" alt="Ramakrishna Cycle Agencies Logo">
-            <h1>Ramakrishna Cycle Agencies</h1>
-            <p class="tagline">Authorized Hero Cycles Dealer in Warangal</p>
+        <div class="brand">
+            <img src="images/rknl.jpg"
+                 alt="Ramakrishna Cycle Agencies Logo"
+                 class="brand-logo">
+
+            <div class="brand-text">
+                <div class="brand-name">Ramakrishna Cycle Agencies</div>
+                <div class="brand-tagline">
+                    Authorized <span class="hero-yellow">Hero Cycles</span> Dealer in Warangal
+                </div>
+            </div>
         </div>
 
-        <ul>
+        <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
+
     </nav>
 </header>
 
@@ -180,4 +188,5 @@ document.getElementById('callBtn').addEventListener('click', function() {
 
 </body>
 </html>
+
 
